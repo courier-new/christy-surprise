@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Christiane's Portfolio</title>
+    <link href="./index.css" rel="stylesheet" />
+    <script src="./nav.js"></script>
+  </head>
+
+  <body>
+    <script>
+      createNav("contact");
+    </script>
+
+    <header>
+      <h3
+        style="
+          display: flex;
+          flex-direction: column;
+          font-family: var(--mono);
+          font-size: 23px;
+          line-height: 24px;
+          align-items: center;
+          color: var(--medium-purple);
+        "
+      >
+        christiane
+        <img src="./images/line.svg" alt="wavy light purple line" width="147" />
+      </h3>
+      <nav></nav>
+    </header>
+
+    <main id="contact">
+      <h1 class="section-header horizontal-inset">Contact</h1>
+      <div
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          right: 15%;
+          z-index: 100;
+          height: 90vh;
+          width: 60%;
+          max-width: 1000px;
+          bottom: 0;
+        "
+      >
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+            margin-right: 60px;
+            margin-top: -250px;
+          "
+        >
+          <h1
+            style="
+              color: var(--medium-purple);
+              font-family: var(--mono);
+              font-size: 40px;
+              margin-bottom: 10px;
+            "
+          >
+            hi there!
+          </h1>
+          <p>Feel free to to reach out; I’d love to meet ya!</p>
+          <p>linkedin.com/in/christianegrace</p>
+          <p>christiane.g.harris@gmail.com</p>
+        </div>
+        <img
+          src="./images/christiane.png"
+          alt="An adventurous UX researcher (me!) sitting on a bench, smiling"
+          width="40%"
+        />
+      </div>
+      <div style="position: absolute; bottom: 0; overflow: hidden; width: 100%">
+        <img
+          src="./images/wave.svg"
+          alt="light blue wave"
+          width="100%"
+          style="position: relative; top: 10vw"
+        />
+      </div>
+    </main>
+  </body>
+</html>

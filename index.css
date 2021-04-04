@@ -398,10 +398,6 @@ nav > a.active {
   font-weight: 700;
 }
 
-section:not(.visible) {
-  display: none !important;
-}
-
 .horizontal-inset {
   margin-left: 60px;
   margin-right: 60px;

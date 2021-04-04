@@ -3,10 +3,14 @@
   <head>
     <title>Christiane's Portfolio</title>
     <link href="./index.css" rel="stylesheet" />
-    <script src="./index.js"></script>
+    <script src="./nav.js"></script>
   </head>
 
   <body>
+    <script>
+      createNav("home");
+    </script>
+
     <header>
       <h3
         style="
@@ -22,269 +26,90 @@
         christiane
         <img src="./images/line.svg" alt="wavy light purple line" width="147" />
       </h3>
-      <nav>
-        <a class="active" href="#home" onclick="navigateTo('home')">Home</a
-        ><a href="#contact" onclick="navigateTo('contact')">Contact</a
-        ><a href="#resume" onclick="navigateTo('resume')">Resume</a
-        ><a href="https://www.linkedin.com/in/christianegrace/">In</a>
-      </nav>
+      <nav></nav>
     </header>
 
-    <main>
-      <!-- HOME -->
-      <section
-        id="home"
+    <main
+      id="home"
+      style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 84vh;
+      "
+    >
+      <h1
         style="
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          height: 84vh;
+          font-family: var(--mono);
+          font-size: 24px;
+          letter-spacing: 0.03em;
+          line-height: 47px;
+          text-align: center;
+          margin-bottom: 1em;
         "
       >
-        <h1
-          style="
-            font-family: var(--mono);
-            font-size: 24px;
-            letter-spacing: 0.03em;
-            line-height: 47px;
-            text-align: center;
-            margin-bottom: 1em;
-          "
+        insights by<span style="display: block; font-size: 64px"
+          >christiane</span
         >
-          insights by<span style="display: block; font-size: 64px"
-            >christiane</span
-          >
-          <img
-            src="./images/line.svg"
-            alt="wavy light purple line"
-            width="425"
-          />
-        </h1>
-        <p style="width: 500px; text-align: center">
-          UX Researcher and explorer itching to dive deep into the murkiest of
-          problems and discover practical solutions for companies and users
-          around the world.
-        </p>
-        <p>I'm currently open to relocation or remote work!</p>
-        <div
-          style="
-            display: flex;
-            justify-content: space-between;
-            width: 96%;
-            margin-top: 50px;
-            max-width: 1200px;
-          "
-        >
-          <a class="card" href="#">
-            <div class="image"></div>
-            <div class="description">
-              <h2>Tomogo</h2>
-              <p>
-                Research & design for a mobile and web app that guides
-                conversations in a second language.
-              </p>
-            </div>
-          </a>
-          <a class="card" href="#">
-            <div class="image"></div>
-            <div class="description">
-              <h2>WeShipBox</h2>
-              <p>
-                A research internship for a shipping-logistics company in Costa
-                Rica.
-              </p>
-            </div>
-          </a>
-          <a class="card" href="#">
-            <div class="image"></div>
-            <div class="description">
-              <h2>PostUp</h2>
-              <p>
-                A mobile app designed to help users find a public spot to work
-                remotely.
-              </p>
-            </div>
-          </a>
-          <a class="card" href="#">
-            <div class="image"></div>
-            <div class="description">
-              <h2>Vibely</h2>
-              <p>
-                A volunteer user research project for an app focused on
-                connections and personal growth.
-              </p>
-            </div>
-          </a>
-        </div>
-      </section>
-      <!-- END HOME -->
-
-      <section id="contact">
-        <h1 class="section-header horizontal-inset">Contact</h1>
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: absolute;
-            right: 15%;
-            z-index: 100;
-            height: 90vh;
-            width: 60%;
-            max-width: 1000px;
-            bottom: 0;
-          "
-        >
-          <div
-            style="
-              display: flex;
-              flex-direction: column;
-              text-align: right;
-              margin-right: 60px;
-              margin-top: -250px;
-            "
-          >
-            <h1
-              style="
-                color: var(--medium-purple);
-                font-family: var(--mono);
-                font-size: 40px;
-                margin-bottom: 10px;
-              "
-            >
-              hi there!
-            </h1>
-            <p>Feel free to to reach out; I’d love to meet ya!</p>
-            <p>linkedin.com/in/christianegrace</p>
-            <p>christiane.g.harris@gmail.com</p>
-          </div>
-          <img
-            src="./images/christiane.png"
-            alt="An adventurous UX researcher (me!) sitting on a bench, smiling"
-            width="40%"
-          />
-        </div>
-        <div
-          style="position: absolute; bottom: 0; overflow: hidden; width: 100%"
-        >
-          <img
-            src="./images/wave.svg"
-            alt="light blue wave"
-            width="100%"
-            style="position: relative; top: 10vw"
-          />
-        </div>
-      </section>
-
-      <!-- RESUME -->
-      <section class="horizontal-inset" id="resume">
-        <h1 class="section-header">Resume</h1>
-        <div style="display: flex">
-          <div class="column" style="min-width: 11%">
-            <h2>Toolbox</h2>
-            <h3>Research & Analysis</h3>
-            <ul>
-              <li>SPSS</li>
-              <li>Python</li>
-              <li>Eureka!</li>
-              <li>Microsoft Office</li>
-              <li>Google Workspace</li>
-            </ul>
-            <h3>Design</h3>
-            <ul>
-              <li>Figma</li>
-              <li>Sketch</li>
-              <li>Adobe XD</li>
-            </ul>
-          </div>
-          <div class="column" style="min-width: 13%">
-            <h2>Skills</h2>
-            <h3>Research & Analysis</h3>
-            <ul>
-              <li>Neuroscience Research</li>
-              <li>Psychology Research</li>
-              <li>Spreadsheets</li>
-              <li>Heuristic Analysis</li>
-              <li>User Interviews</li>
-              <li>User Testing</li>
-              <li>Affinity Mapping</li>
-              <li>Empathy Mapping</li>
-              <li>Card Sorting</li>
-              <li>Personas</li>
-            </ul>
-            <h3>Design</h3>
-            <ul>
-              <li>Neuroscience Research</li>
-              <li>Psychology Research</li>
-              <li>Spreadsheets</li>
-              <li>Heuristic Analysis</li>
-              <li>User Interviews</li>
-              <li>User Testing</li>
-              <li>Affinity Mapping</li>
-              <li>Empathy Mapping</li>
-              <li>Card Sorting</li>
-              <li>Personas</li>
-            </ul>
-          </div>
-          <div class="column">
-            <h2>Relevant Experience</h2>
-            <h3>CX/UX Research Intern at WeShipBox</h3>
-            <h4>November - December 2020</h4>
+        <img src="./images/line.svg" alt="wavy light purple line" width="425" />
+      </h1>
+      <p style="width: 500px; text-align: center">
+        UX Researcher and explorer itching to dive deep into the murkiest of
+        problems and discover practical solutions for companies and users around
+        the world.
+      </p>
+      <p>I'm currently open to relocation or remote work!</p>
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          width: 96%;
+          margin-top: 50px;
+          max-width: 1200px;
+        "
+      >
+        <a class="card" href="#">
+          <div class="image"></div>
+          <div class="description">
+            <h2>Tomogo</h2>
             <p>
-              Designed, implemented, and reported a CX/UX study for WeShipBox,
-              providing recommendations based on the company’s goals and needs,
-              and based on insights from customer interviews, market research,
-              and usability testing.
-            </p>
-            <h3>Product/Operations Specialist at Apple Inc.</h3>
-            <h4>September 2018 - November 2019</h4>
-            <p>
-              Facilitated collaboration across multiple teams to investigate and
-              strategize solutions for operational inefficiencies and stock
-              discrepancies.
-            </p>
-            <h3>Research Assistant at NAU, Department of Psychology</h3>
-            <h4>September 2016 - May 2018</h4>
-            <p>
-              Designed, implemented, and reported a correlational study under
-              the direction of Dr. Larry Stevens, which examined relationships
-              between hypnotic susceptibility and drug use.
-            </p>
-            <p>
-              Gathered and analyzed behavioral, questionnaire, and EEG data for
-              Dr. Larry Stevens’s study concerning the affect of hypnosis on
-              body temperature and blood pressure.
+              Research & design for a mobile and web app that guides
+              conversations in a second language.
             </p>
           </div>
-          <div class="column" style="min-width: 22%">
-            <h2>Education</h2>
-            <h3>UX Career Track (Cert.) at Springboard</h3>
-            <h4>June 2020 - present</h4>
+        </a>
+        <a class="card" href="#">
+          <div class="image"></div>
+          <div class="description">
+            <h2>WeShipBox</h2>
             <p>
-              Tackled 350+ hours of hands-on course material, with 1:1 expert
-              mentor oversight, and completion of 3 in-depth projects.
+              A research internship for a shipping-logistics company in Costa
+              Rica.
             </p>
-            <p>
-              Designed, implemented, and reported user studies before and during
-              the design process.
-            </p>
-            <p>
-              Mastered skills in sketching, wireframing, interaction design,
-              prototyping, and usability testing as a part of a framework
-              focused on the discovery, design, and evaluation phases of
-              user-centered design.
-            </p>
-            <h3>Psychology (BS) at Northern Arizona University</h3>
-            <h4>May 2018</h4>
-            <ul>
-              <li>Minor in Japanese</li>
-              <li>GPA: 4.0</li>
-            </ul>
           </div>
-        </div>
-      </section>
-      <!-- END RESUME -->
+        </a>
+        <a class="card" href="#">
+          <div class="image"></div>
+          <div class="description">
+            <h2>PostUp</h2>
+            <p>
+              A mobile app designed to help users find a public spot to work
+              remotely.
+            </p>
+          </div>
+        </a>
+        <a class="card" href="#">
+          <div class="image"></div>
+          <div class="description">
+            <h2>Vibely</h2>
+            <p>
+              A volunteer user research project for an app focused on
+              connections and personal growth.
+            </p>
+          </div>
+        </a>
+      </div>
     </main>
   </body>
 </html>
